@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './fonts/fonts.css';
+@import './variables.css';
+
+@layer components {
+  .wrapper {
+    @apply flex flex-col w-full min-h-full items-center justify-center;
+  }
+
+  .container {
+    @apply flex max-w-1300 p-4;
+  }
+
+  .sectionTitle {
+    display: 'flex';
+    font-family: var(--Fell);
+    letter-spacing: 0.1em;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 0.5rem;
+  }
+
+  .sectionSubtitle {
+    display: 'flex';
+    max-width: 900px;
+    text-align: center;
+  }
+
+  .case {
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    align-items: center;
+    min-width: 205px;
+  }
+
+  .buttonYellow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.1em;
+    padding: 0.250rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: rgba(39, 38, 36, 1);
+    font-weight: 700;
+    background-color: rgba(255, 177, 15, 1);
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: 0.2s;
+  }
+
+  .buttonYellow:hover {
+    transition: 0.2s;
+    background-color: rgba(255, 212, 128, 1);
+  }
+}
+
+html {
+  font-size: 16px;
+  color: white;
+  /* background-color: #31302f; */
+  font-family: 'Amazon';
+}
+
+body {
+  margin: 0;
+  text-shadow: 0 0 4px #272624;
+  background: no-repeat center url('./img/back.png') fixed;
+  filter: blur(0.2px);
+  background-size: 100% 100%;
+}
+
+/* media */
+@media screen and (max-width: 1280px) {
+  .welcome {
+    height: 50vh !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .welcome {
+    height: 30vh !important;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  html {
+    font-size: 14px;
+  }
+}
