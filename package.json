@@ -25,11 +25,11 @@
     "sass": "^1.36.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
+    "autoprefixer": "^10.3.1",
     "concurrently": "^6.2.0",
     "eslint": "7.31.0",
     "eslint-config-next": "11.0.1",
-    "postcss": "^7.0.36",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7"
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
   }
 }

@@ -75,7 +75,7 @@ export default function New() {
               <p className="my-3">
                 Many gamers have faced technical difficulties, and experts like
                 Asmongold, while generally praising New World, are not at all
-                sure if it's ready for the premiere. Should the studio postpone
+                sure if it&aposs ready for the premiere. Should the studio postpone
                 debut again? Or is a month quite enough to work on bugs?
               </p>
             </span>
@@ -83,7 +83,7 @@ export default function New() {
               <p className="my-3">
                 By the release, the developers promised to fix more bugs in the
                 game. And also optimize the game. In the end, the benchmark
-                results weren't the best.
+                results weren&apost the best.
               </p>
             </span>
 

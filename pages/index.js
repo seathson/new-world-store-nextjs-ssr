@@ -63,11 +63,11 @@ export default function Home() {
             <h1 className="text-2xl text-yellow my-2">
               BUY A GOLD IN NEW WORLD WITH FAST DELIVERY
             </h1>
-            <p className="">
+            <p>
               Spend your gold on upgrades, crafting new items, and advancing in
               the NEW WORLD. We have the largest selection of servers and the
               fastest order processing. As well as a system of discounts in our
-              Discord. Save your time and enjoy the game. You don't have to farm
+              Discord. Save your time and enjoy the game. You don&apost have to farm
               for hours to get the item you want. You can just buy it!
             </p>
             <Link href="/[...params]" as="#products">
