@@ -1,27 +1,26 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import { MainLayout } from '../../components/MainLayout'
-import Link from 'next/link'
-import mountain from '../../assets/img/mountain.png'
-import { News } from '../../components/News/News'
+import mountain from '../../assets/img/mountain.webp'
+import { NewsR } from '../../components/News/NewsR'
 
-export default function Posts({ posts: serverPosts }) {
-  const [posts, setPosts] = useState(serverPosts)
+export default function News({ news: serverNews }) {
+  const [news, setNews] = useState(serverNews)
 
   useEffect(() => {
     async function load() {
-      const res = await fetch('http://localhost:4200/posts')
+      const res = await fetch(`${process.env.API_URL}/news`)
       const data = await res.json()
 
-      setPosts(data)
+      setNews(data)
     }
-    console.log(serverPosts)
-    if (!serverPosts) {
+
+    if (!serverNews) {
       load()
     }
   }, [])
 
-  if (!posts) {
+  if (!news) {
     return (
       <MainLayout>
         <p>Loading...</p>
@@ -30,42 +29,39 @@ export default function Posts({ posts: serverPosts }) {
   }
 
   return (
-    <MainLayout title={'Posts Page'}>
-      <Head>
-        <title>Posts page</title>
-      </Head>
+    <MainLayout title={'New World Store | News buy gold coins'}>
 
-      <section className='flex justify-center bg-no-repeat bg-center bg-cover items-center w-full' style={{ backgroundImage: `url(${mountain.src})`, height: '40vh' }}>
+      <section className='flex justify-center bg-no-repeat bg-center h-96 md:h-64 bg-cover items-center w-full' style={{ backgroundImage: `url(${mountain.src})`}}>
         <div className="container justify-center items-center">
         <h2 className="sectionTitle">NEWS</h2>
         </div>
       </section>
       <section className='flex'>
-        <div className="container">
-          <News/>
+        <div className="container xs:px-0">
+          <NewsR news={news}/>
         </div>
       </section>
 
 
       {/* <h1>Post Page</h1>
       <ul>
-        {posts.map(post => (<li key={post.id}>
-          <Link href={'/post/[id]'} as={`/post/${post.id}`}><a>{post.title}</a></Link>
+        {news.map(item => (<li key={item.id}>
+          <Link href={'/news/[id]'} as={`/news/${item.id}`}><a>{item.title}</a></Link>
         </li>))}
       </ul> */}
     </MainLayout>
   )
 }
 
-Posts.getInitialProps = async ({ req }) => {
+News.getInitialProps = async ({ req }) => {
   if (!req) {
-    return {posts: null}
+    return {news: null}
   }
 
-  const res = await fetch(`${process.env.API_URL}/posts`)
-  const posts = await res.json()
+  const res = await fetch(`${process.env.REACT_APP_API_DB}/news`)
+  const news = await res.json()
 
   return {
-    posts
+    news
   }
 }

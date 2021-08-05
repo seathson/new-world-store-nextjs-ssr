@@ -3,8 +3,48 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang={'en'}>
         <Head>
+          <meta charSet="utf-8" />
+          <meta name="keywords" content="newworld,coins,gold,buy,store,shop" />
+          <meta
+            name="title"
+            content="New World: Buy GOLD coins in New World Store"
+          />
+          <meta
+            name="description"
+            content="This is a safe place to shop in the New World. New world Buy gold coins in the best store. Fast delivery of gold. Lifetime warranty. Buy Now!"
+          />
+
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://metatags.io/" />
+          <meta
+            property="og:title"
+            content="New World: Buy GOLD coins in New World Store"
+          />
+          <meta
+            property="og:description"
+            content="This is a safe place to shop in the New World. New world Buy gold coins in the best store. Fast delivery of gold. Lifetime warranty. Buy Now!"
+          />
+          <meta
+            property="og:image"
+            content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+          />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://metatags.io/" />
+          <meta
+            property="twitter:title"
+            content="New World: Buy GOLD coins in New World Store"
+          />
+          <meta
+            property="twitter:description"
+            content="This is a safe place to shop in the New World. New world Buy gold coins in the best store. Fast delivery of gold. Lifetime warranty. Buy Now!"
+          />
+          <meta
+            property="twitter:image"
+            content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com"></link>
           <link
             rel="preconnect"

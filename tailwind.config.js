@@ -7,6 +7,7 @@ module.exports = {
     colors: {
       current: 'currentColor',
       black: '#232220',
+      darkBlack: '#141312',
       lightBlack: '#47443f',
       yellow: '#ffb10f',
       textBlack: '#272624',
@@ -21,9 +22,11 @@ module.exports = {
     extend: {
       width: {
         '1300': '1300px',
+        '800': '800px',
       },
       maxWidth: {
         '1300': '1300px',
+        '800': '800px',
       },
       screens: {
         'xs': {'max': '400px'},
@@ -34,10 +37,17 @@ module.exports = {
         'xl': {'max': '1280px'},
         '2xl': {'max': '1536px'},
       },
+      outline: {
+        white: '1px solid #a1a1a1'
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      borderWidth: ['hover'],
+      outline: ['hover'],
+      transform: ['hover'],
+    },
   },
   plugins: [],
 }
