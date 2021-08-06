@@ -1,7 +1,4 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
-import preview from '../../assets/img/preview.png'
-import Link from 'next/link'
 import Router from 'next/router'
 
 export function New({ id, imagePath, name, title, description }) {
