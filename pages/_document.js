@@ -11,13 +11,34 @@ export default class MyDocument extends Document {
             name="title"
             content="New World: Buy GOLD coins in New World Store"
           />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+          />
+          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+          <meta name="msapplication-TileColor" content="#da532c" />
+          <meta name="theme-color" content="#ffffff" />
           <meta
             name="description"
             content="This is a safe place to shop in the New World. New world Buy gold coins in the best store. Fast delivery of gold. Lifetime warranty. Buy Now!"
           />
 
           <meta property="og:type" content="website" />
-          <meta property="og:url" content='https://newworldstore.net/' />
+          <meta property="og:url" content="https://newworldstore.net/" />
           <meta
             property="og:title"
             content="New World: Buy GOLD coins in New World Store"
@@ -26,10 +47,7 @@ export default class MyDocument extends Document {
             property="og:description"
             content="This is a safe place to shop in the New World. New world Buy gold coins in the best store. Fast delivery of gold. Lifetime warranty. Buy Now!"
           />
-          <meta
-            property="og:image"
-            content="/socials.webp"
-          />
+          <meta property="og:image" content="/socials.webp" />
 
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://newworldstore.net/" />
@@ -41,10 +59,7 @@ export default class MyDocument extends Document {
             property="twitter:description"
             content="This is a safe place to shop in the New World. New world Buy gold coins in the best store. Fast delivery of gold. Lifetime warranty. Buy Now!"
           />
-          <meta
-            property="twitter:image"
-            content="/socials.webp"
-          />
+          <meta property="twitter:image" content="/socials.webp" />
           <link rel="preconnect" href="https://fonts.googleapis.com"></link>
           <link
             rel="preconnect"
