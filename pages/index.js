@@ -67,7 +67,7 @@ export default function Home() {
               Spend your gold on upgrades, crafting new items, and advancing in
               the NEW WORLD. We have the largest selection of servers and the
               fastest order processing. As well as a system of discounts in our
-              Discord. Save your time and enjoy the game. You don&apost have to farm
+              Discord. Save your time and enjoy the game. You don&apos;t have to farm
               for hours to get the item you want. You can just buy it!
             </p>
             <Link href="/[...params]" as="#products">

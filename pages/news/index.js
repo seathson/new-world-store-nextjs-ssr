@@ -9,7 +9,7 @@ export default function News({ news: serverNews }) {
 
   useEffect(() => {
     async function load() {
-      const res = await fetch(`http://localhost:3001/news`)
+      const res = await fetch(`http://localhost:3001/api/news`)
       // const res = await fetch(`${process.env.API_DB}/news`)
       const data = await res.json()
 
@@ -59,7 +59,7 @@ News.getInitialProps = async ({ req }) => {
     return {news: null}
   }
 
-  const res = await fetch(`http://localhost:3001/news`)
+  const res = await fetch(`http://localhost:3001/api/news`)
   // const res = await fetch(`${process.env.REACT_APP_API_DB}/news`)
   const news = await res.json()
 
