@@ -9,7 +9,7 @@ export default function News({ news: serverNews }) {
 
   useEffect(() => {
     async function load() {
-      const res = await fetch(`${process.env.API_URL}/news`)
+      const res = await fetch(`${process.env.API_DB}/news`)
       const data = await res.json()
 
       setNews(data)
