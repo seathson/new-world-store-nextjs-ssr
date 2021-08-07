@@ -2,9 +2,6 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 export default class MyDocument extends Document {
   render() {
-    setInterval(() => {
-      fetch('https://new-world-store-nextjs-ssr.herokuapp.com/news')
-    }, 300000)
     return (
       <Html lang={'en'}>
         <Head>
