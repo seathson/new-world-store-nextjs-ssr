@@ -1,0 +1,43 @@
+.welcome {
+  background-image: url('./img/screen.webp');
+  height: 70vh;
+}
+
+.difference {
+  background-image: url('./img/screen2.webp');
+  min-height: 45vh
+}
+
+.faq {
+  background-image: url('./img/faq2.webp');
+  min-height: 70vh;
+}
+
+.service {
+  background-image: url('./img/service.webp');
+  min-height: 60vh;
+}
+
+.closed-beta1 {
+  background-image: url('./img/closed-beta/closed-beta1.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.beginner-way1 {
+  background-image: url('./img/beginner-way/beginner-way1.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.beginner-way2 {
+  background-image: url('./img/beginner-way/beginner-way2.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.beginner-way3 {
+  background-image: url('./img/beginner-way/beginner-way3.webp');
+  background-size: cover;
+  background-position: center;
+}

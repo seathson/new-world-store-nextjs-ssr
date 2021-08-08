@@ -57,9 +57,7 @@ export default function Home() {
   return (
     <MainLayout title={'New World Store | Home buy gold coins'}>
       <section
-        className="welcome flex justify-center bg-no-repeat bg-center bg-cover items-center w-full"
-        style={{ backgroundImage: `url(${screen.src})`, height: '70vh' }}
-      >
+        className="welcome flex justify-center bg-no-repeat bg-center bg-cover items-center w-full">
         <div className="container flex-col font-medium">
           <div className="flex flex-col flex-shrink-1 max-w-xl">
             <h3 className="flex text-lightYellow tracking-widest text-sm leading-7 uppercase">
@@ -111,8 +109,8 @@ export default function Home() {
           </p>
         </div>
         <div
-          className="flex items-center justify-center w-full bg-no-repeat bg-center bg-cover mt-6"
-          style={{ backgroundImage: `url(${screen2.src})`, minHeight: '45vh' }}
+          className="difference flex items-center justify-center w-full bg-no-repeat bg-center bg-cover mt-6"
+          // style={{ backgroundImage: `url(${screen2.src})`, minHeight: '45vh' }}
         >
           <div className="container flex-wrap">
             <Case
@@ -151,8 +149,8 @@ export default function Home() {
           </p>
         </div>
         <div
-          className="flex items-center justify-center w-full bg-no-repeat bg-center bg-cover mt-6"
-          style={{ backgroundImage: `url(${service.src})`, minHeight: '60vh' }}
+          className="service flex items-center justify-center w-full bg-no-repeat bg-center bg-cover mt-6"
+          // style={{ backgroundImage: `url(${service.src})`, minHeight: '60vh' }}
         >
           <div className="container items-center justify-center">
             <button className="buttonYellow">coming soon</button>
@@ -172,7 +170,7 @@ export default function Home() {
         </div>
         <div
           className="faq flex items-start justify-center w-full bg-no-repeat bg-center bg-cover mt-0"
-          style={{ backgroundImage: `url(${faq2.src})` }}
+          // style={{ backgroundImage: `url(${faq2.src})` }}
         >
           <div className="container flex-col max-w-3xl items-center justify-center mt-10">
             <Faqs />

@@ -37,12 +37,13 @@ export default function New() {
       </section>
       <section className="content tracking-wide font-medium mb-10">
         <div className="containerPost flex-col text-md s:text-lg">
-          <div className="flex relative h-96 xs:h-56">
-            <Image
+          <div className="beginner-way1 flex relative h-96 xs:h-56">
+            {/* <Image
               className="object-cover"
+              priority={true}
               src={'/news/beginner-way.webp'}
               layout="fill"
-            />
+            /> */}
           </div>
           <div className="text mt-6">
             <span>
@@ -109,8 +110,8 @@ export default function New() {
                 </Link>
               </p>
             </span>
-            <div className="flex relative h-96 xs:h-56 my-10">
-              <Image className="object-cover" src={img2.src} layout="fill" />
+            <div className="beginner-way2 flex relative h-96 xs:h-56 my-10">
+              {/* <Image className="object-cover" src={img2.src} layout="fill" /> */}
             </div>
             <h3 className="font-Fell text-3xl text-left mt-10 whitespace-pre-wrap">
               {/* posttitle */}
@@ -183,8 +184,8 @@ export default function New() {
               </p>
             </span>
 
-            <div className="flex relative h-96 xs:h-56 my-10">
-              <Image className="object-cover" src={img3.src} layout="fill" />
+            <div className="beginner-way3 flex relative h-96 xs:h-56 my-10">
+              {/* <Image className="object-cover" src={img3.src} layout="fill" /> */}
             </div>
 
             <h3 className="font-Fell text-3xl text-left mt-10 whitespace-pre-wrap">

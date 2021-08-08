@@ -34,12 +34,12 @@ export default function New() {
       </section>
       <section className="content tracking-wide font-medium mb-10">
         <div className="containerPost flex-col text-md s:text-lg">
-          <div className="flex relative h-96 xs:h-56">
-            <Image
+          <div className="closed-beta1 flex relative h-96 xs:h-56">
+            {/* <Image
               className="object-cover"
               src={'/news/closed-beta.webp'}
               layout="fill"
-            />
+            /> */}
           </div>
           <div className="text mt-6">
             <span>

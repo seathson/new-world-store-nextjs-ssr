@@ -4,6 +4,7 @@
 
 @import './fonts/fonts.css';
 @import './variables.css';
+@import './images.css';
 
 @layer components {
   .wrapper {
@@ -89,10 +90,6 @@
     background-color: #d5d5d5;
     color: #272624;
     text-shadow: none;
-  }
-
-  .faq {
-    min-height: 70vh;
   }
 }
 
