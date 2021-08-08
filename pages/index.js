@@ -17,7 +17,7 @@ import { useRouter } from 'next/router'
 import { useEffect, useRef, useState } from 'react'
 
 export default function Home() {
-  const [hash, setHash] = useState('/')
+  const [hash, setHash] = useState('')
   const router = useRouter()
 
   const productSection = useRef()
@@ -30,14 +30,19 @@ export default function Home() {
 
   if (hash === '/#products') {
     window.scrollTo({
-      top: productSection.current.offsetTop - 50,
+      top: productSection.current.offsetTop - 70,
       behavior: 'smooth',
+    })
+  }
+  if (hash === '/') {
+    window.scrollTo({
+      top: 0,
     })
   }
 
   if (hash === '/#faq') {
     window.scrollTo({
-      top: faqSection.current.offsetTop - 50,
+      top: faqSection.current.offsetTop - 70,
       behavior: 'smooth',
     })
   }
@@ -52,23 +57,23 @@ export default function Home() {
   return (
     <MainLayout title={'New World Store | Home buy gold coins'}>
       <section
-        className="welcome flex justify-center bg-no-repeat bg-center bg-cover items-center w-full md:mt-20"
+        className="welcome flex justify-center bg-no-repeat bg-center bg-cover items-center w-full"
         style={{ backgroundImage: `url(${screen.src})`, height: '70vh' }}
       >
         <div className="container flex-col font-medium">
-          <div className="flex flex-col flex-shrink-1 max-w-xl ">
+          <div className="flex flex-col flex-shrink-1 max-w-xl">
             <h3 className="flex text-lightYellow tracking-widest text-sm leading-7 uppercase">
               New World Store
             </h3>
-            <h1 className="text-2xl text-yellow my-2">
+            <h1 className="text-2xl text-yellow my-3">
               BUY A GOLD IN NEW WORLD WITH FAST DELIVERY
             </h1>
             <p>
               Spend your gold on upgrades, crafting new items, and advancing in
               the NEW WORLD. We have the largest selection of servers and the
               fastest order processing. As well as a system of discounts in our
-              Discord. Save your time and enjoy the game. You don&apos;t have to farm
-              for hours to get the item you want. You can just buy it!
+              Discord. Save your time and enjoy the game. You don&apos;t have to
+              farm for hours to get the item you want. You can just buy it!
             </p>
             <Link href="/[...params]" as="#products">
               <button className="buttonYellow mr-auto mt-8">
@@ -96,7 +101,7 @@ export default function Home() {
           </p> */}
         </div>
       </section>
-      <section className="flex flex-col mt-20 items-center w-full md:mt-28">
+      <section className="flex flex-col mt-6 items-center w-full">
         <div className="container flex-col items-center">
           <h2 className="sectionTitle">WHY CHOOSE US?</h2>
           <p className="sectionSubtitle tracking-widest mt-4">
@@ -135,7 +140,9 @@ export default function Home() {
         className="flex flex-col mt-20 items-center w-full"
       >
         <div className="container flex-col items-center">
-          <h2 className="sectionTitle whitespace-pre-wrap text-center">Select your service</h2>
+          <h2 className="sectionTitle whitespace-pre-wrap text-center">
+            Select your service
+          </h2>
           <p className="sectionSubtitle tracking-widest mt-4">
             Below you can see the different types of services.
             <br />
@@ -164,8 +171,8 @@ export default function Home() {
           </p>
         </div>
         <div
-          className="faq flex items-start justify-center w-full bg-no-repeat bg-center bg-cover mt-6"
-          style={{ backgroundImage: `url(${faq2.src})`}}
+          className="faq flex items-start justify-center w-full bg-no-repeat bg-center bg-cover mt-0"
+          style={{ backgroundImage: `url(${faq2.src})` }}
         >
           <div className="container flex-col max-w-3xl items-center justify-center mt-10">
             <Faqs />

@@ -2,4 +2,3 @@ User-Agent: *
 Allow: /
 
 Host: https://newworldstore.net/
-Sitemap: https://newworldstore.net/sitemap.xml

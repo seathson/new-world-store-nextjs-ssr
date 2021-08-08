@@ -17,43 +17,43 @@ export function MainLayout({ children, title = 'New World Store buy gold coins' 
         <title>{title}</title>
       </Head>
       <div className="wrapper">
-        <header className="flex justify-center h-12 sticky left-0 top-0 w-full bg-black items-center z-50">
-          <div className="container items-center justify-start h-full">
-            <div className="logo flex w-12 xs:w-10 mr-6 xs:mr-2 mt-2 flex-shrink-0">
+        <header className="flex justify-center h-16 sticky left-0 top-0 w-full bg-black items-center z-50">
+          <div className="container items-center px-0 justify-start h-full ">
+            <div className="logo items-center justify-center flex w-14 xs:w-12 ml-6 mr-16 md:mr-12 xs:mr-4 mt-2 flex-shrink-0 ">
               <Link href={'/'}>
                 <a>
                   <Image objectFit={'contain'} src={logo} />
                 </a>
               </Link>
             </div>
-            <nav className="nav flex text-sm text-textWhite h-12 font-normal uppercase tracking-widest">
-              <div className="flex items-center justify-center duration-200 hover:bg-darkBlack">
+            <nav className="nav flex text-sm text-textWhite h-16 font-normal uppercase tracking-widest ">
+              <div className="flex items-center justify-center duration-200 sm:hover:bg-black hover:bg-darkBlack">
                 <Link href={'/'}>
-                  <a className="flex w-full h-full px-3 xs:px-2 items-center justify-center text-center">
+                  <a className="flex w-full h-full px-4 xs:px-2 items-center justify-center text-center">
                     Home
                   </a>
                 </Link>
               </div>
-              <div className="flex items-center justify-center duration-200 hover:bg-darkBlack">
+              <div className="flex items-center justify-center duration-200 sm:hover:bg-black hover:bg-darkBlack">
                 <Link href={'/news'}>
-                  <a className="flex w-full h-full px-3 xs:px-2 items-center justify-center text-center">
+                  <a className="flex w-full h-full px-4 xs:px-2 items-center justify-center text-center">
                     News
                   </a>
                 </Link>
               </div>
-              <div className="flex items-center justify-center duration-200 hover:bg-darkBlack">
+              <div className="flex items-center justify-center duration-200 sm:hover:bg-black hover:bg-darkBlack">
                 <Link href={'https://discord.gg/6dzXay7ATB'}>
                   <a
-                    className="flex w-full h-full px-3 xs:px-2 items-center justify-center text-center"
+                    className="flex w-full h-full px-4 xs:px-2 items-center justify-center text-center"
                     target="_blank"
                   >
                     Discord
                   </a>
                 </Link>
               </div>
-              <div className="flex items-center justify-center duration-200 hover:bg-darkBlack">
+              <div className="flex items-center justify-center duration-200 sm:hover:bg-black hover:bg-darkBlack">
                 <Link href="/#support">
-                  <a className="flex w-full h-full px-3 items-center justify-center text-center">
+                  <a className="flex w-full h-full px-4 xs:px-2 items-center justify-center text-center">
                     Support
                   </a>
                 </Link>

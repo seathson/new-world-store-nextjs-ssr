@@ -50,7 +50,7 @@
     align-items: center;
     justify-content: center;
     letter-spacing: 0.1em;
-    padding: 0.250rem;
+    padding: 0.25rem;
     padding-left: 2rem;
     padding-right: 2rem;
     color: rgba(39, 38, 36, 1);
@@ -71,7 +71,7 @@
     align-items: center;
     justify-content: center;
     letter-spacing: 0.1em;
-    padding: 0.250rem;
+    padding: 0.25rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     color: #d5d5d5;
@@ -92,7 +92,7 @@
   }
 
   .faq {
-    min-height: 65vh;
+    min-height: 70vh;
   }
 }
 
@@ -101,6 +101,8 @@ html {
   color: white;
   /* background-color: #31302f; */
   font-family: 'Amazon';
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -111,27 +113,38 @@ body {
   background-size: 100% 100%;
 }
 
-/* media */
-@media screen and (max-width: 1280px) {
-  .welcome {
-    height: 50vh !important;
-  }
+li::before {
+  content: "- ";
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 768px) {
+/* media */
+/* @media screen and (max-width: 1280px) {
   .welcome {
-    height: 30vh !important;
+    height: 60vh !important;
   }
-}
+} */
+
+/* @media screen and (max-width: 768px) {
+  .welcome {
+    height: 45vh !important;
+  }
+} */
 
 @media screen and (max-width: 512px) {
   html {
     font-size: 12px;
   }
+
+  .buttonYellow:hover {/*  off hover on mobile */
+    transition: 0.2s;
+    background-color: rgba(255, 177, 15, 1);
+  }
 }
 
 @media screen and (max-width: 400px) {
-  .sectionTitle{
+  .sectionTitle {
     font-size: 1.7rem;
   }
 

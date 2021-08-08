@@ -43,7 +43,7 @@ export default function New() {
           </div>
           <div className="text mt-6">
             <span>
-              <p className="my-3">Hello Adventurers,</p>
+              <p className="my-3">Hello Adventurers!</p>
             </span>
 
             <span>
