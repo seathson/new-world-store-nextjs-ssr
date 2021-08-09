@@ -91,6 +91,7 @@
     color: #272624;
     text-shadow: none;
   }
+
 }
 
 html {
@@ -107,7 +108,7 @@ body {
   text-shadow: 0 0 4px #272624;
   background: no-repeat center url('./img/back.webp') fixed;
   filter: blur(0.2px);
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 li::before {
