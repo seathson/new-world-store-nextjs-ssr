@@ -148,34 +148,34 @@ export function MainLayout({ children, title = 'New World Store buy gold coins' 
                   </Link>
                 </div>
               </div>
-              <div className="flex flex-col m-5 xs:m-0 xs:mt-7 flex-1 xl:justify-start xl:items-center text-sm">
+              <div className="flex flex-col m-5 xs:m-0 xs:mt-7 flex-1 items-center text-sm">
                 <h3 className="text-lg text-lightYellow mb-3">
                   Payment methods
                 </h3>
                 <div
-                  className="flex flex-row justify-start flex-wrap xl:justify-center xl:items-center"
+                  className="flex flex-row justify-center flex-wrap"
                   style={{ minWidth: '250px' }}
                 >
                   <div
                     className="flex w-16 h-10 bg-contain bg-no-repeat m-2"
-                    style={{ backgroundImage: `url(${paypalIcon.src})` }}
-                  ></div>
+                    // style={{ backgroundImage: `url(${paypalIcon.src})` }}
+                  ><Image src={paypalIcon.src} width='100' height='100' objectFit='contain' objectPosition='center'/></div>
                   <div
                     className="flex w-16 h-10 bg-contain bg-no-repeat m-2"
-                    style={{ backgroundImage: `url(${visalIcon.src})` }}
-                  ></div>
+                    // style={{ backgroundImage: `url(${visalIcon.src})` }}
+                  ><Image src={visalIcon.src} width='100' height='100' objectFit='contain' objectPosition='center'/></div>
                   <div
                     className="flex w-16 h-10 bg-contain bg-no-repeat m-2"
-                    style={{ backgroundImage: `url(${mclIcon.src})` }}
-                  ></div>
+                    // style={{ backgroundImage: `url(${mclIcon.src})` }}
+                  ><Image src={mclIcon.src} width='100' height='100' objectFit='contain' objectPosition='center'/></div>
                   <div
                     className="flex w-16 h-10 bg-contain bg-no-repeat m-2"
-                    style={{ backgroundImage: `url(${bitcoinlIcon.src})` }}
-                  ></div>
+                    // style={{ backgroundImage: `url(${bitcoinlIcon.src})` }}
+                  ><Image src={bitcoinlIcon.src} width='100' height='100' objectFit='contain' objectPosition='center'/></div>
                   <div
                     className="flex w-16 h-10 bg-contain bg-no-repeat m-2"
-                    style={{ backgroundImage: `url(${ethIcon.src})` }}
-                  ></div>
+                    // style={{ backgroundImage: `url(${ethIcon.src})` }}
+                  ><Image src={ethIcon.src} width='100' height='100' objectFit='contain' objectPosition='center'/></div>
                 </div>
               </div>
             </div>

@@ -41,3 +41,15 @@
   background-size: cover;
   background-position: center;
 }
+
+.get-gold1 {
+  background-image: url('./img/get-gold/get-gold1.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.get-gold2 {
+  background-image: url('./img/get-gold/get-gold2.webp');
+  background-size: cover;
+  background-position: center;
+}
