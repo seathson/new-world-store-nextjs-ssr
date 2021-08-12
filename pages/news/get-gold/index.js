@@ -129,7 +129,7 @@ export default function New() {
 
             <span>
               <p className="my-3">
-                The whole game is built on gold, you can't do anything without
+                The whole game is built on gold, you can&apos;t do anything without
                 gold. Gold is the only way to improve your character so far.
                 Buying armor, upgrades, buying weapons, crafting are all
                 available if you have gold.
