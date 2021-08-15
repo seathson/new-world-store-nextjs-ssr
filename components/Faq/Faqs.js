@@ -16,7 +16,7 @@ export function Faqs() {
     {
       id: 1,
       title: `Is it safe to use the services of the New World Store?`,
-      text: `Yes, we guarantee that everything will be in order with your order and the service will be provided on time. We adhere to the rules of the game, you don't have to worry about security.`,
+      text: `Yes, we guarantee that everything is safe and the service will be provided on time. It is important that every our client is satisfied!`,
     },
     {
       id: 2,

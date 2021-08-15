@@ -53,3 +53,21 @@
   background-size: cover;
   background-position: center;
 }
+
+.factions1 {
+  background-image: url('./img/factions/factions1.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.factions2 {
+  background-image: url('./img/factions/factions2.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.factions3 {
+  background-image: url('./img/factions/factions3.webp');
+  background-size: cover;
+  background-position: center;
+}
