@@ -71,3 +71,26 @@
   background-size: cover;
   background-position: center;
 }
+
+.attributes1 {
+  background-image: url('./img/attributes/attributes1.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.attributes2 {
+  background-image: url('./img/attributes/attributes2.webp');
+  background-size: cover;
+  background-position: center;
+}
+.attributes3 {
+  background-image: url('./img/attributes/attributes3.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.attributes4 {
+  background-image: url('./img/attributes/attributes4.webp');
+  background-size: cover;
+  background-position: center;
+}

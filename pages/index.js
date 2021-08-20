@@ -223,8 +223,8 @@ export default function Home() {
               <h3 className="buttonYellow-none text-3xl" style={{textShadow: 'none'}}>
                 New World Coins
               </h3>
-              <div className="flex flex-row w-full justify-center mt-10 select-none tracking-widest">
-                <div className="flex w-96 flex-col justify-start items-center order-2">
+              <div className="flex flex-row md:flex-wrap w-full justify-center mt-10 select-none tracking-widest">
+                <div className="flex w-96 flex-col md:mt-10 justify-start items-center order-2">
                   {/* <h4 className="flex justify-center bg-black bg-opacity-80 text-center items-center text-3xl p-1.5">
                     Choose Your Server
                   </h4> */}
@@ -241,7 +241,7 @@ export default function Home() {
                     </span>
                   </div>
                   <input
-                      className="bg-black bg-opacity-70 border-black border rounded-sm w-96 text-center outline-none text-2xl mt-5 py-1.5"
+                      className="bg-black bg-opacity-70 border-black border rounded-sm min-w-full text-center outline-none text-2xl mt-5 py-1.5"
                       type="text"
                       placeholder="Email"
                     />
