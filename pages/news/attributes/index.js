@@ -73,7 +73,7 @@ export default function New() {
                 is promoted, you gain one attribute point, which you can invest
                 in any of them. The soft lid of each of the main characteristics
                 is 60 units. You can exceed the limit by using various trinkets,
-                but anything above the limit has less impact on the character's
+                but anything above the limit has less impact on the character&apos;s
                 strength. If you want to redistribute the characteristics of
                 your character, you can do it at any time for a small amount of
                 coins. Respec up to level 20 will be completely free, it will
@@ -429,7 +429,7 @@ export default function New() {
                 </li>
                 <li>
                   <b>Furnishing</b> - making furniture, chests and trophies for
-                  players' houses
+                  players&apos; houses
                 </li>
               </ul>
             </span>
