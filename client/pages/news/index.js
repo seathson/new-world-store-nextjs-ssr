@@ -8,9 +8,7 @@ export default function News({ news: serverNews }) {
 
   useEffect(() => {
     async function load() {
-      // const res = await fetch(`http://localhost:3001/api/news`)
-      const res = await fetch(`https://newworldstore.net/api/news`)
-      // const res = await fetch(`${process.env.API_DB}/news`)
+       const res = await fetch(`http://localhost:3001/api/news`)
       const data = await res.json()
 
       setNews(data)
@@ -42,14 +40,6 @@ export default function News({ news: serverNews }) {
           <NewsR news={news}/>
         </div>
       </section>
-
-
-      {/* <h1>Post Page</h1>
-      <ul>
-        {news.map(item => (<li key={item.id}>
-          <Link href={'/news/[id]'} as={`/news/${item.id}`}><a>{item.title}</a></Link>
-        </li>))}
-      </ul> */}
     </MainLayout>
   )
 }
@@ -59,10 +49,7 @@ News.getInitialProps = async ({ req }) => {
     return {news: null}
   }
 
-  // const res = await fetch(`http://localhost:3001/api/news`)
-  const res = await fetch(`https://newworldstore.net/api/news`)
-  // const res = await fetch(`https://new-world-store-nextjs-ssr.herokuapp.com/news`)
-  // const res = await fetch(`${process.env.REACT_APP_API_DB}/news`)
+  const res = await fetch(`http://localhost:3001/api/news`)
   const news = await res.json()
 
   return {

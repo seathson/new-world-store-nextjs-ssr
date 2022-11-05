@@ -2,10 +2,6 @@ import Link from 'next/link'
 import { MainLayout } from '../components/MainLayout'
 import { Case } from '../components/Case'
 import { Faqs } from '../components/Faq/Faqs'
-import screen from '../assets/img/screen.webp'
-import screen2 from '../assets/img/screen2.webp'
-import faq2 from '../assets/img/faq2.webp'
-import service from '../assets/img/service.webp'
 import {
   faGem,
   faDove,
@@ -19,7 +15,6 @@ import { useEffect, useRef, useState } from 'react'
 import axios from 'axios'
 
 export default function Home() {
-  // const [hash, setHash] = useState('')
   const [amount, setAmount] = useState(500)
   const [price, setPrice] = useState(1)
 
@@ -35,11 +30,7 @@ export default function Home() {
     currency: 'USD',
   })
 
-  // move logic
   useEffect(() => {
-    // setHash(router.asPath)
-    console.log(router)
-
     if (router.asPath === '/#products') {
       window.scrollTo({
         top: productSection.current.offsetTop - 70,
@@ -66,38 +57,11 @@ export default function Home() {
         behavior: 'smooth',
       })
     }
-  }, [router.asPath])
+  }, [router])
 
   useEffect(() => {
     setPrice(() => Number(amount) / 500)
   }, [amount])
-
-  // if (hash === '/#products') {
-  //   window.scrollTo({
-  //     top: productSection.current.offsetTop - 70,
-  //     behavior: 'smooth',
-  //   })
-  // }
-
-  // if (hash === '/') {
-  //   window.scrollTo({
-  //     top: 0,
-  //   })
-  // }
-
-  // if (hash === '/#faq') {
-  //   window.scrollTo({
-  //     top: faqSection.current.offsetTop - 70,
-  //     behavior: 'smooth',
-  //   })
-  // }
-
-  // if (hash === '/#support') {
-  //   window.scrollTo({
-  //     top: 9999, // warning!
-  //     behavior: 'smooth',
-  //   })
-  // }
 
   const handleChange = (e) => {
     const elem = e.target
@@ -112,14 +76,13 @@ export default function Home() {
     setAmount(Math.round(amount / 500) * 500)
   }
 
-  const createOrder = async () => {
-    const res = await axios.post('http://localhost:3001/api/users/product', {
-      title,
-      price,
-    })
-    // Router.push(res.data.link)
-    window.open(res.data.link, '_blank')
-  }
+  // const createOrder = async () => {
+  //   const res = await axios.post('http://localhost:3001/api/users/product', {
+  //     title,
+  //     price,
+  //   })
+  //   window.open(res.data.link, '_blank')
+  // }
 
   return (
     <MainLayout title={'New World Store | Home buy gold coins'}>
@@ -145,24 +108,6 @@ export default function Home() {
               </button>
             </Link>
           </div>
-
-          {/* <h1>Hello Next.JS</h1>
-          <p>
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-          </p>
-          <p>
-            <Link href="/posts">
-              <a>Posts</a>
-            </Link>
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit animi
-            libero veritatis perspiciatis! Saepe officiis doloremque repellat in
-            quod? Voluptatum fugit eligendi quod veniam voluptatem veritatis
-            commodi provident quia sapiente?
-          </p> */}
         </div>
       </section>
       <section className="flex flex-col mt-6 items-center w-full">
@@ -174,10 +119,7 @@ export default function Home() {
             services from us and be satisfied!
           </p>
         </div>
-        <div
-          className="difference flex items-center justify-center w-full bg-no-repeat bg-center bg-cover mt-6"
-          // style={{ backgroundImage: `url(${screen2.src})`, minHeight: '45vh' }}
-        >
+        <div className="difference flex items-center justify-center w-full bg-no-repeat bg-center bg-cover mt-6">
           <div className="container flex-wrap">
             <Case
               icon={faGem}
@@ -214,21 +156,21 @@ export default function Home() {
             immediately provide it.
           </p>
         </div>
-        <div
-          className="service flex items-center justify-center w-full bg-no-repeat bg-center bg-cover mt-6"
-          // style={{ backgroundImage: `url(${service.src})`, minHeight: '60vh' }}
-        >
+        <div className="service flex items-center justify-center w-full bg-no-repeat bg-center bg-cover mt-6">
           <div className="container items-center justify-center">
             <div className="flex flex-col justify-a items-center w-full">
-              <h3 className="buttonYellow-none text-3xl" style={{textShadow: 'none'}}>
+              <h3
+                className="buttonYellow-none text-3xl"
+                style={{ textShadow: 'none' }}
+              >
                 New World Coins
               </h3>
               <div className="flex flex-row md:flex-wrap w-full justify-center mt-10 select-none tracking-widest">
                 <div className="flex w-96 flex-col md:mt-10 justify-start items-center order-2">
-                  {/* <h4 className="flex justify-center bg-black bg-opacity-80 text-center items-center text-3xl p-1.5">
-                    Choose Your Server
-                  </h4> */}
-                  <p className="buttonWhite-none text-black bg-textWhite mb-4 font-bold cursor-default" style={{textShadow: 'none'}}>
+                  <p
+                    className="buttonWhite-none text-black bg-textWhite mb-4 font-bold cursor-default"
+                    style={{ textShadow: 'none' }}
+                  >
                     Choose Your Server
                   </p>
 
@@ -241,14 +183,19 @@ export default function Home() {
                     </span>
                   </div>
                   <input
-                      className="bg-black bg-opacity-70 border-black border rounded-sm min-w-full text-center outline-none text-2xl mt-5 py-1.5"
-                      type="text"
-                      placeholder="Email"
-                    />
+                    className="bg-black bg-opacity-70 border-black border rounded-sm min-w-full text-center outline-none text-2xl mt-5 py-1.5"
+                    type="text"
+                    placeholder="Email"
+                  />
                 </div>
 
                 <div className="flex w-96 flex-col items-center order-1">
-                  <p className="buttonWhite-none text-black bg-textWhite mb-4 font-bold cursor-default" style={{textShadow: 'none'}}>AMOUNT</p>
+                  <p
+                    className="buttonWhite-none text-black bg-textWhite mb-4 font-bold cursor-default"
+                    style={{ textShadow: 'none' }}
+                  >
+                    AMOUNT
+                  </p>
                   <div className="flex flex-row">
                     <div
                       className="flex justify-center items-center w-10 mx-2 rounded-sm bg-black bg-opacity-70 border-black border cursor-pointer text-4xl pb-1"
@@ -274,7 +221,9 @@ export default function Home() {
                         setAmount((prevAmount) => Number(prevAmount) + 500)
                       }}
                     >
-                      <span className='flex text-center justify-center items-center w-full'>+</span>
+                      <span className="flex text-center justify-center items-center w-full">
+                        +
+                      </span>
                     </div>
                   </div>
                   <div className="flex flex-col items-start">
@@ -286,19 +235,13 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <button
-                className="buttonYellow mt-8"
-                onClick={() => {
-                  createOrder()
-                }}
-              >
+              <button className="buttonYellow mt-8">
                 Checkout ({formatter.format(price)})
                 <i className="flex items-center justify-center ml-3">
                   <FontAwesomeIcon icon={faShoppingCart} />
                 </i>
               </button>
             </div>
-            {/* <button className="buttonYellow">coming soon</button> */}
           </div>
         </div>
       </section>
@@ -313,10 +256,7 @@ export default function Home() {
             World Store!
           </p>
         </div>
-        <div
-          className="faq flex items-start justify-center w-full bg-no-repeat bg-center bg-cover mt-0"
-          // style={{ backgroundImage: `url(${faq2.src})` }}
-        >
+        <div className="faq flex items-start justify-center w-full bg-no-repeat bg-center bg-cover mt-0">
           <div className="container flex-col max-w-3xl items-center justify-center mt-10">
             <Faqs />
             <Link href="/[...params]" as="#products">
